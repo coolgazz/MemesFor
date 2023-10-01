@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.headder{
+    color: blueviolet;
+}
+p{
+    font-size: 50px;
+    color: white;
+    background-color: #af2e2e;
+}
+body{
+    background-color: silver;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 750px;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Young Serif', serif;
+    margin: 0;
+}
+
+.container, .memecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    gap: 25px;
+}
+
+.memecontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
