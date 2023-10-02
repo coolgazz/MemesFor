@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Когда думаешь, что пишешь правильный код</title>
+</head>
+<body>
+    <h1>Когда думаешь, что пишешь правильный код, но программа выдает ошибку:</h1>
+    <img src="https://example.com/your-meme-image.jpg" alt="Ошибка" width="400">
+    <p>Код:</p>
+    <pre>
+        <code>
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Мой сайт&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <p>Ошибка: Не закрыт тег &lt;h1&gt;.</p>
+</body>
+</html>
