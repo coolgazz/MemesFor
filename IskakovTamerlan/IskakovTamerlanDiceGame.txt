@@ -1,0 +1,33 @@
+import random
+
+def roll_dice(number_of_dice):
+
+  results = []
+  for _ in range(number_of_dice):
+    results.append(random.randint(1, 6))
+  return results
+
+def main():
+
+  player_score = 0
+  computer_score = 0
+
+  while player_score < 50 and computer_score < 50:
+
+    print("Ваш ход. Введите количество костей для броска:")
+    number_of_dice = int(input())
+    player_roll = roll_dice(number_of_dice)
+    player_score += sum(player_roll)
+    print(f"Вы выбросил {player_roll}. Счет игрока: {player_score}")
+
+    computer_roll = roll_dice(number_of_dice)
+    computer_score += sum(computer_roll)
+    print(f"Компьютер выбросил {computer_roll}. Счет компьютера: {computer_score}")
+
+    if player_score >= 50:
+      print("Игрок выиграл!")
+    elif computer_score >= 50:
+      print("Компьютер выиграл!")
+
+if __name__ == "__main__":
+  main()
