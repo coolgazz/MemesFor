@@ -1,0 +1,40 @@
+import random
+
+def roll_dice():
+    return random.randint(1, 6)
+
+def main():
+    player1 = input("Игрок 1, введите ваше имя: ")
+    player2 = input("Игрок 2, введите ваше имя: ")
+
+    score1 = 0
+    score2 = 0
+
+    while True:
+        input(f"{player1}, нажмите Enter, чтобы бросить кубик...")
+        roll = roll_dice()
+        print(f"{player1} выбросил: {roll}")
+        score1 += roll
+
+        input(f"{player2}, нажмите Enter, чтобы бросить кубик...")
+        roll = roll_dice()
+        print(f"{player2} выбросил: {roll}")
+        score2 += roll
+
+        print(f"Текущий счет:")
+        print(f"{player1}: {score1}")
+        print(f"{player2}: {score2}")
+
+        play_again = input("Продолжить игру? (да/нет): ").lower()
+        if play_again != "да":
+            break
+
+    if score1 > score2:
+        print(f"{player1} выиграл!")
+    elif score2 > score1:
+        print(f"{player2} выиграл!")
+    else:
+        print("Ничья!")
+
+if __name__ == "__main__":
+    main()
